@@ -156,7 +156,7 @@ async function initializeDatabase() {
   server.listen(
     {
       port,
-      host: process.env.HOST || "127.0.0.1",
+      host: "0.0.0.0",
     },
     () => {
       log(`serving on port ${port}`);
